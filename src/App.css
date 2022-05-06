@@ -1,38 +1,269 @@
-.App {
+*{
+  padding: 0;
+  margin: 0;
+  border:0;
+}
+body{
+  background-color: #F8F8F8;
+}
+nav{
+  display: flex;
+  justify-content: flex-start;
+  height: 72px;
+  background-color: #A5C926;
+}
+.link{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+padding: 10px 40px;
+margin-top: 31px;
+}
+.main{
+  font-size: 21px;
+  margin-left: 135px;
+  margin-top: 25px;
+}
+.chart{
+margin-left: 200px;
+}
+.greentext{
+  color: #A5C926;
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  line-height: 16px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 39px;
+  line-height: 48px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(MainPhoto.png);
+  width: 100%;
+  height: 640px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main_text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  width:570px;
+  height: 308px;
+  border-radius: 16px;
+}
+.btn{
+  width: 153px;
+  height: 48px;
+  border-radius: 24px;
+  background-color: #A5C926;
+  color: white;
+  align-self: center;
+  font-size: 14px;
+  line-height: 24px;
+}
+.product_type_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 460px;
+}
+.product_type_stuffed{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 570px;
+  margin: 15px;
+  height: 188px;
+  background-color: #FFC12C;
+  border-radius: 16px;
+  color: white;
+}
+.product_type_wooden{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  width: 570px;
+  height: 188px;
+  background-color: #FB416B;
+  border-radius: 16px;
+  color: white;
+}
+.teddy, .flower{
+  margin-bottom: 85px;
+}
+h2{
+  font-family: 'Varela Round', sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-style: normal;
+  font-weight: 400;
+}
+.stuffed{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 40px;
+}
+.wooden{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 40px;
+}
+.btnShop{
+width:112px;
+height: 40px;
+background-color: white;
+border-radius: 20px;
+margin: 10px;
+font-weight: 400;
+font-family: 'Open Sans', sans-serif;
+}
+p{
+font-size: 14px;
+font-weight: 400;
+font-family: 'Open Sans', sans-serif;
+line-height: 24px;
+}
+.range{
+  width: 100%;
+  height: 588px;
+}
+.toys_container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.stuffed_animals_block{
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #fff;
+  width: 270px;
+  height: 328px;
+  border-radius: 16px ;
+  margin: 10px;
+}
+.toySize{
+height: 182px;
+margin: 15px;
+}
+.indent{
+  margin-left: 90px;
+}
+.title_size{
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+font-family: 'Varela Round', sans-serif;
+text-align: center;
+}
+.prise_size{
+height: 24px;
+width: 92px;
+font-family: 'Open Sans', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+background: #A5C926;
+border-radius: 16px;
+color: white;
+text-align: center;
+margin: 5px;
+}
+.delivery_container{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background-image: url(deliver.png);
+  height: 464px;
+  width: 100%;
+}
+.delivery{
+  background-color: white;
+  width: 350px;
+  height: 300px;
+  border-radius: 16px;
+
+}
+.heading_text{
+  font-size: 29px;
+  text-align: center;
+  color: #A5C926;
+}
+.text{
+  font-size: 20px;
+  text-align: center;
+  line-height: 32px;
+  padding: 10px;
+
+}
+.information_container{
+  height: 872px;
+  width: 100%;
+}
+.information{
+  margin: 135px;
+}
+.header_infornation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.information_block{
+  display: flex;
+  justify-content: center;
+
+}
+.green{
+  color: #A5C926;
+}
+.show{
+  background-color: #F8F8F8;
+  color: #A5C926;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.information_text_block{
+  padding: 15px;
+}
+.instagram_container{
+height: 694px;
+width: 100%;
+}
+.instagram{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.insta_photo{
+display: flex;
+justify-content: center;
+}
+footer{
+  width: 100%;
+  height: 50px;
+  background-color: #A5C926;
   color: white;
+  display: flex;
+  justify-content: space-evenly;
 }
-
-.App-link {
-  color: #61dafb;
+.contacts_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttons_slide{
+  display: flex;
+  justify-content: space-around;
 }
