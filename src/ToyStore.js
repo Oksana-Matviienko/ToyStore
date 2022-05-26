@@ -5,6 +5,7 @@ import { dataTwo } from "./dataTwo";
 import spiderman from "./spiderman.png";
 import teddy from "./teddy.png";
 import woodenmain from "./woodentoys.png";
+import Catalog from "./Catalog"
 
 
 function ToyStore(){
@@ -12,20 +13,19 @@ function ToyStore(){
    const [woodenToys, setWoodenToys] = useState(dataTwo);
    let textS = "A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action. There is no magic formula to write perfect ad copy.  "
    const [showMore, setShowMore] = useState(false);
+
    return(
       <div>
-
       <div className="main_container">
          <div className="main_text">
          <p className="greentext">Say Hello to ToyStore!</p>
-         <h1> Free Ecommerce <br></br> Template for Webflow </h1>
          <br></br>
-         <button className="btn">Open Catalog</button>
+         <h1> Free Ecommerce <br></br> Template for Webflow </h1>
          </div>
       </div>
-
+      <br></br>
+      {/* Stuffed/Wooden Toys */}
       <div className="product_type_container">
-
 <div className="product_type_stuffed">
         <img className="teddy" src={teddy} alt="stuffed toys" width="220px" height="220px"/>
         <div className="stuffed">
@@ -40,7 +40,7 @@ function ToyStore(){
         <img className="flower" src={woodenmain} alt="wooden toys" width="220px" height="220px"/>
         </div>
         </div>
-
+<br></br>
            <div className="range">
            <h2 className="indent">Stuffed Animals</h2>
            <div  className="toys_container">
@@ -106,13 +106,12 @@ function ToyStore(){
 <br></br>
 <button className="btn">Don't miss!</button>
 </div>
-<img src ={spiderman} alt="spiderman"width="567px" height="422px"/>
+<img className="spider" src ={spiderman} alt="spiderman"width="567px" height="422px"/>
 </div>
 </div>
 </div>
 <About/>
 <footer>
-   <h2>ToyStore</h2>
    <p>Design by Elastic Themes</p>
    <p>Web-site was made by Oksana Matviienko</p>
 </footer>

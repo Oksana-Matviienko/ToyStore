@@ -9,26 +9,26 @@ import instSix from "./instSix.png";
 export const dataInst =[
    {
       id:1,
-      image: <img src={instOne} alt="instagram"/>,
+      image: instOne,
    },
    {
       id:2,
-      image: <img src={instTwo} alt="instagram"/>
+      image: instTwo
    },
    {
       id:3,
-      image: <img src={instThree} alt="instagram"/>
+      image: instThree
    },
    {
       id:4,
-      image: <img src={instFour} alt="instagram"/>
+      image: instFour
    },
    {
       id:5,
-      image: <img src={instFive} alt="instagram"/>
+      image: instFive
    },
    {
       id:6,
-      image: <img src={instSix} alt="instagram"/>
+      image: instSix
    }
 ] 
